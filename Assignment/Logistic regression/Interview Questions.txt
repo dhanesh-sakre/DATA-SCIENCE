@@ -1,0 +1,46 @@
+Interview Questions:
+1. What is the difference between precision and recall?
+
+
+Recall: 
+
+it tell me about the ability of model to predict positive classes correctly.
+Recall = True_Positive/(True_Positive + False_Negative)
+when to use Recall : when False Negative is more harmful, then I need to use focus on Recall.
+
+
+
+precision:
+
+it tell me out of total positive predictive classes how many classes are actually positive.
+Precision = True_Positive/(True_Positive + False_Positive)
+when to use Recall : when False Positive is more harmful, then I need to use focus on Precision.
+
+
+
+
+2. What is cross-validation, and why is it important in binary classification?
+
+Cross-Validation is a technique to validate the model and evaluate the model. 
+There are multiple cross validation techniques:
+
+1. TRAIN TEST SPLIT
+2. K-FOLD 
+3. LEAVE ONE OUT
+
+Binary classification Importance:
+
+Improves Generalization: Cross-validation helps ensure that the model generalizes well to new,
+ unseen data by training and validating on different subsets of the data.
+
+Reduces Overfitting: By using multiple subsets for training and validation,
+ cross-validation reduces the risk of overfitting,
+ where the model performs well on the training data but poorly on new data.
+
+Provides Robust Evaluation: Cross-validation provides a more comprehensive evaluation of the
+ model's performance by averaging the results over multiple folds, 
+giving a better indication of how the model will perform in practice.
+
+Helps in Model Selection: It aids in selecting the best model and hyperparameters by comparing
+ the cross-validation scores of different models and configurations.
+
